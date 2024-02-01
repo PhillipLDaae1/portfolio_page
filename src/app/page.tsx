@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useRef } from "react"
 
-export function useIsVisible(ref) {
+function useIsVisible(ref) {
   const [isIntersecting, setIntersecting] = useState(false)
 
   useEffect(() => {
